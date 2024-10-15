@@ -1,6 +1,3 @@
-# Time-Series-Models-Project
-Time Series Forecasting with Random Forest and XGBoost
-
 # Time Series Forecasting with Random Forest and XGBoost
 
 This project provides a framework for training and saving machine learning models to forecast time series data, utilizing both **Random Forest** and **XGBoost** regressors. The project includes custom feature engineering, data preprocessing, and an ensemble approach for more accurate predictions. It is designed to handle multiple datasets simultaneously and saves trained models for future use, making it ideal for scalable time series prediction tasks.
@@ -22,8 +19,8 @@ Key components include:
    - Cleans and processes data, filling missing values and handling anomalies.
 
 2. **Custom Feature Engineering**:
-   - Adds features like `hour`, `dayofweek`, `month`, and `quarter` to capture time-based patterns.
-   - Creates lagged features (e.g., `lag1`, `lag2`, `lag3`, `lag4`) and rolling statistics (mean and standard deviation) for enhanced context on historical values.
+   - Adds features like `minute`, `hour`, `dayofweek`, `month`, and `quarter` to capture time-based patterns.
+   - Creates lagged features (e.g., `lag1`, `lag2`, `lag3`, `lag4`, `lag5`) and rolling statistics (mean and standard deviation) for enhanced context on historical values.
 
 3. **Standardization**:
    - Applies standardization using `StandardScaler` from `sklearn` to ensure that all features contribute equally to the model, improving model performance and training stability.
